@@ -13,7 +13,6 @@ interface Props {
 export const MedicalStable: FC<Props> = memo(function MedicalStable(props = {}) {
   return (
     <div className={`${resets.clapyResets} ${classes.root}`}>
-      <div className={classes.rectangle98}></div>
       <div className={classes.titleBlock}>Stable/ Chronic Conditions</div>
       <div className={classes.frame29}>
         <YesNoQ
@@ -23,9 +22,7 @@ export const MedicalStable: FC<Props> = memo(function MedicalStable(props = {}) 
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>COPD with unstable severe cardiac comorbidities</div>
-              </div>
+              "COPD with unstable severe cardiac comorbidities"
             ),
           }}
         />
@@ -36,9 +33,7 @@ export const MedicalStable: FC<Props> = memo(function MedicalStable(props = {}) 
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>Arterial blood gas measurements required</div>
-              </div>
+              "Arterial blood gas measurements required"
             ),
           }}
         />
@@ -49,9 +44,7 @@ export const MedicalStable: FC<Props> = memo(function MedicalStable(props = {}) 
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>Required cardiac monitoring or intensive care</div>
-              </div>
+              "Required cardiac monitoring or intensive care"
             ),
           }}
         />
@@ -62,9 +55,7 @@ export const MedicalStable: FC<Props> = memo(function MedicalStable(props = {}) 
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>Need for mechanical ventilation</div>
-              </div>
+              "Need for mechanical ventilation"
             ),
           }}
         />
@@ -75,9 +66,7 @@ export const MedicalStable: FC<Props> = memo(function MedicalStable(props = {}) 
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>On methadone requiring daily pickup of medication</div>
-              </div>
+              "On methadone requiring daily pickup of medication"
             ),
           }}
         />
@@ -88,9 +77,7 @@ export const MedicalStable: FC<Props> = memo(function MedicalStable(props = {}) 
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>Active drug abuse</div>
-              </div>
+              "Active drug abuse"
             ),
           }}
         />
@@ -101,9 +88,7 @@ export const MedicalStable: FC<Props> = memo(function MedicalStable(props = {}) 
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>Active drug abuse</div>
-              </div>
+              "Active drug abuse"
             ),
           }}
         />

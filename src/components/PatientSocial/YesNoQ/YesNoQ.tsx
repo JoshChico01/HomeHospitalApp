@@ -41,13 +41,9 @@ export const YesNoQ: FC<Props> = memo(function YesNoQ(props) {
       <div className={divClass}>
           {/* Rest of your component */}
           {props.text?.loremIpsumDolorSitAmetConsecte != null ? (
-            <div className={classes.frameQ} >{props.text?.loremIpsumDolorSitAmetConsecte}</div>
+            <div className={`${classes.frameQ} ${classes.textBlock}`} >{props.text?.loremIpsumDolorSitAmetConsecte}</div>
           ) : (
-            <div className={classes.loremIpsumDolorSitAmetConsecte}>
-              <div className={classes.textBlock}>
-                Insert text
-              </div>
-            </div>
+            <div className={`${classes.frameQ} ${classes.textBlock}`} >Insert text</div>
           )}
         <div className={classes.frame13} >
               <label className={yesRadioClass}>Yes

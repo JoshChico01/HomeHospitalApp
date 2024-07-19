@@ -24,7 +24,7 @@ export const Comments: FC<Props> = memo(function Comments(props = {}) {
   };
 
   return (
-    <div className={`${resets.clapyResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
+    <div className={`${resets.clapyResets} ${classes.root}`}>
       <div className={divClass}>
         <div className={classes.frame13}>
           <div className={classes.loremIpsumDolorSitAmetConsecte}>

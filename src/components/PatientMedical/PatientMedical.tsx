@@ -15,7 +15,6 @@ interface Props {
 export const PatientMedical: FC<Props> = memo(function PatientMedical(props) {
   return (
     <div className={`${resets.clapyResets} ${classes.root}`}>
-      <div className={classes.rectangle197}></div>
       <div className={classes.details}>
         <div className={classes.frame25}>
           <div className={classes.done}>DONE</div>

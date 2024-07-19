@@ -13,7 +13,6 @@ interface Props {
 export const Social: FC<Props> = memo(function Social(props = {}) {
   return (
     <div className={`${resets.clapyResets} ${classes.root}`}>
-      <div className={classes.rectangle98}></div>
       <div className={classes.frame27}>
         <YesNoQ
           className={classes.yesNoQ}
@@ -22,13 +21,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-
-
-                <div className={classes.textBlock}>Do you have plans to move in the next 5 days?</div>
-
-
-              </div>
+              "Do you have plans to move in the next 5 days?"
             ),
           }}
         />
@@ -39,11 +32,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>
-                  Do you have plans to move to a Skilled Nursing Facility or Nursing Home in the next 30 days?
-                </div>
-              </div>
+              "Do you have plans to move to a Skilled Nursing Facility or Nursing Home in the next 30 days?"
             ),
           }}
         />
@@ -54,9 +43,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>Are you planning to travel in the next 30 days?</div>
-              </div>
+              "Are you planning to travel in the next 30 days?"
             ),
           }}
         />
@@ -67,12 +54,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>
-                  If traveling in the next 30 days, will you be able to accept follow up phone calls from your
-                  Recovery Care Coordinator?
-                </div>
-              </div>
+              "If traveling in the next 30 days, will you be able to accept follow up phone calls from your Recovery Care Coordinator?"
             ),
           }}
         />
@@ -83,11 +65,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>
-                  Are there any special instructions for getting into your home?
-                </div>
-              </div>
+              "Are there any special instructions for getting into your home?"
             ),
           }}
         />
@@ -110,11 +88,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>
-                  Do you or anyone in your home use or is involved in the selling of recreational/illicit drugs?
-                </div>
-              </div>
+              "Do you or anyone in your home use or is involved in the selling of recreational/illicit drugs?"
             ),
           }}
         />
@@ -125,12 +99,8 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>
-                  Are you comfortable with health care professionals making multiple daily visits to your home? This
-                  includes but is not limited to nurses, x-ray technicians, or EMTs.
-                </div>
-              </div>
+              <p>Are you comfortable with health care professionals making multiple daily visits to your home?  <hr />
+                This includes but is not limited to nurses, x-ray technicians, or EMTs.</p>
             ),
           }}
         />
@@ -141,12 +111,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>
-                  If other people live in your home, are they comfortable with health care professionals making
-                  multiple daily visits to your home?
-                </div>
-              </div>
+              "If other people live in your home, are they comfortable with health care professionals making multiple daily visits to your home?"
             ),
           }}
         />
@@ -157,32 +122,25 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>
-                  Do you have a working home telephone or mobile phone available 24/7 with which you could call the
-                  Hospital at Home team in case of an emergency?
-                </div>
-              </div>
+              "Do you have a working home telephone or mobile phone available 24/7 with which you could call the Hospital at Home team in case of an emergency?"
             ),
           }}
         />
         <YesNoQ
-          className={classes.yesNoQList}
+          className={classes.yesNoQ}
           hide={{
             radioNoRejected: true
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>
-                  Does your home have:
-                </div>
-                <ul className={classes.textBlock}>
-                  <li className={classes.listBlock}>Electricity</li>
-                  <li className={classes.listBlock}>Running water</li>
-                  <li className={classes.listBlock}>Access to refrigeration</li>
+              <p>
+                Does your home have:
+                <ul>
+                  <li>Electricity</li>
+                  <li>Running water</li>
+                  <li>Access to refrigeration</li>
                 </ul>
-              </div>
+              </p>
             ),
           }}
         />
@@ -193,9 +151,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
           }}
           text={{
             loremIpsumDolorSitAmetConsecte: (
-              <div className={classes.loremIpsumDolorSitAmetConsecte}>
-                <div className={classes.textBlock}>Do you live alone?</div>
-              </div>
+              "Do you live alone?"
             ),
           }}
         />

@@ -2,33 +2,12 @@
   width: initial;
   align-self: stretch;
 }
-.loremIpsumDolorSitAmetConsecte {
-  position: absolute;
-  left: 16px;
-  top: 12px;
-  width: 806px;
-  height: min-content;
-  flex-direction: column;
-}
-.textBlock {
-  color: #272340;
-  font-size: 14px;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-}
 .root {
   position: relative;
   width: 1054px;
-  height: 998px;
+  height: 100%;
   flex-direction: column;
   align-items: flex-start;
-}
-.rectangle98 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1054px;
-  height: 998px;
   border-radius: 8px;
   background-color: #f2f0f9;
 }
@@ -39,20 +18,22 @@
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   text-transform: capitalize;
-  position: absolute;
-  left: 29px;
-  top: 14px;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
   width: min-content;
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
 }
 .frame29 {
-  position: absolute;
-  left: 29px;
-  top: 62px;
+  position: relative;
+  margin-left: 27px;
+  margin-top: 20px;
   width: 1025px;
-  height: min-content;
+  height: 100%;
   flex-direction: column;
   gap: 20px;
 }

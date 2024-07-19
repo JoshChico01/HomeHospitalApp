@@ -12,9 +12,7 @@ interface Props {
 export const CommentFrame: FC<Props> = memo(function CommentFrame(props = {}) {
   return (
     <div className={`${resets.clapyResets} ${classes.root}`}>
-      <div className={classes.rectangle98}></div>
       <Comments
-        className={classes.comments}
         text={{
           title: (
             "Final Comment and Decision"
