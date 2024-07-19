@@ -1,12 +1,7 @@
-import React, { FC, memo, useState } from 'react';
-import type { ReactNode } from 'react';
+import React, { memo, useState } from 'react';
+import type { FC, ReactNode } from 'react';
 
 import resets from '../../_resets.module.css';
-import { RadioActiveFlagged } from '../RadioActiveFlagged/RadioActiveFlagged.js';
-import { RadioNeutralNo } from '../RadioNeutralNo/RadioNeutralNo.js';
-import { RadioNeutralNoFlag } from '../RadioNeutralNoFlag/RadioNeutralNoFlag.js';
-import { RadioNeutralYes } from '../RadioNeutralYes/RadioNeutralYes.js';
-import { RadioNeutralYesFlag } from '../RadioNeutralYesFlag/RadioNeutralYesFlag.js';
 import classes from './Comments.module.css';
 
 interface Props {
@@ -31,17 +26,6 @@ export const Comments: FC<Props> = memo(function Comments(props = {}) {
   return (
     <div className={`${resets.clapyResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <div className={divClass}>
-        {/* {props.hide?.flagged && (
-          <div>
-            <div className={classes.rectangle195}></div>
-            <div className={classes.rectangle98}></div>
-            <div className={classes.frame31}>
-              <RadioNeutralNo className={classes.radioNeutralNo2} />
-              <RadioActiveFlagged className={classes.radioActiveFlagged} />
-            </div>
-          </div>
-        )} */}
-        
         <div className={classes.frame13}>
           <div className={classes.loremIpsumDolorSitAmetConsecte}>
             {props.text?.title != null ? (
@@ -65,7 +49,6 @@ export const Comments: FC<Props> = memo(function Comments(props = {}) {
               // name="yesNoQ"
               checked={selectedOption === 'accept'}
               onChange={() => handleOptionChange('accept')}
-              // className={props.classes?.radioNeutralYesFlag || ''}
             />
           </label>
           <label className={`${classes.radioOption} ${classes.radioOptionRed}`}>Reject
@@ -75,7 +58,6 @@ export const Comments: FC<Props> = memo(function Comments(props = {}) {
               // name="yesNoQ"
               checked={selectedOption === 'reject'}
               onChange={() => handleOptionChange('reject')}
-              // className={props.classes?.radioNeutralYesFlag || ''}
             />
           </label>
         </div>

@@ -1,13 +1,7 @@
-import React, { FC, memo, useState } from 'react';
-import type { ReactNode } from 'react';
+import React, { memo, useState } from 'react';
+import type { FC, ReactNode } from 'react';
 
 import resets from '../../_resets.module.css';
-import { CheckboxNeutral } from '../CheckboxNeutral/CheckboxNeutral.js';
-import { RadioActiveFlagged } from '../RadioActiveFlagged/RadioActiveFlagged.js';
-import { RadioNeutralNo } from '../RadioNeutralNo/RadioNeutralNo.js';
-import { RadioNeutralNoFlag } from '../RadioNeutralNoFlag/RadioNeutralNoFlag.js';
-import { RadioNeutralYes } from '../RadioNeutralYes/RadioNeutralYes.js';
-import { RadioNeutralYesFlag } from '../RadioNeutralYesFlag/RadioNeutralYesFlag.js';
 import classes from './MCQ.module.css';
 
 interface Props {
@@ -39,12 +33,11 @@ export const MCQ: FC<Props> = memo(function MCQ(props) {
     } else if (option === 'no' && props.hide?.radioNoRejected) {
       setDivClass(`${classes.qContent} ${classes.qContentRed}`);
     } else {
-      setDivClass(classes.qContent); // Default class if conditions are not met
+      setDivClass(classes.qContent); 
     }
   };
   return (
     <div className={`${resets.clapyResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
-      <div className={classes.rectangle84}></div>
       <div className={divClass}>
         <div className={classes.frame13}>
           <div className={classes.textBlock}>
@@ -58,8 +51,8 @@ export const MCQ: FC<Props> = memo(function MCQ(props) {
               <div key={index} className={classes.checkboxNeutral}>
                 <input
                   type="checkbox"
-                  // id={`option_${index}`} // Provide a unique id for each checkbox
-                  className={classes.checkbox} // Apply custom styling class if needed
+                  // id={`option_${index}`}
+                  className={classes.checkbox}
                 />
                 <label>{optionText}</label>
               </div>
@@ -67,8 +60,6 @@ export const MCQ: FC<Props> = memo(function MCQ(props) {
           </div>
         </div>
       <div className={classes.frame18}>
-        {/* <RadioNeutralYesFlag className={classes.radioNeutralYesFlag} />
-        <RadioNeutralNo className={classes.radioNeutralNo} /> */}
         <label className={yesRadioClass}>Yes
           <input
             type="radio"
@@ -76,7 +67,6 @@ export const MCQ: FC<Props> = memo(function MCQ(props) {
             // name="yesNoQ"
             checked={selectedOption === 'yes'}
             onChange={() => handleOptionChange('yes')}
-            // className={props.classes?.radioNeutralYesFlag || ''}
           />
         </label>
         <label className={noRadioClass}>No
@@ -86,11 +76,11 @@ export const MCQ: FC<Props> = memo(function MCQ(props) {
             // name="yesNoQ"
             checked={selectedOption === 'no'}
             onChange={() => handleOptionChange('no')}
-            // className={props.classes?.radioNeutralYesFlag || ''}
           />
         </label>
       </div>
       </div>
+      <div className={classes.rectangle84}></div>
     </div>
   );
 });
