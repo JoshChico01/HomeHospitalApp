@@ -71,6 +71,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
         />
         <MCQ
           className={classes.mCQ}
+          id={'medicalEquipmentOpt'}
           text={{
             optionList: [
               "Wheelchair",
@@ -157,6 +158,7 @@ export const Social: FC<Props> = memo(function Social(props = {}) {
         />
         <MCQ
           className={classes.mCQ}
+          id={'carerOpt'}
           hide={{
             radioNoRejected: true,
           }}

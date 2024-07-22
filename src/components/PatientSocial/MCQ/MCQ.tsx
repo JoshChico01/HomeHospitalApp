@@ -9,6 +9,7 @@ interface Props {
   classes?: {
     root?: string;
   };
+  id: string;
   hide?: {
     radioYesRejected?: boolean;
     radioNoRejected?: boolean;
@@ -51,10 +52,10 @@ export const MCQ: FC<Props> = memo(function MCQ(props) {
               <div key={index} className={classes.checkboxNeutral}>
                 <input
                   type="checkbox"
-                  // id={`option_${index}`}
+                  id={`${props.id}_${index}`}
                   className={classes.checkbox}
                 />
-                <label>{optionText}</label>
+                <label htmlFor={`${props.id}_${index}`}>{optionText}</label>
               </div>
             ))}
           </div>

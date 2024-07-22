@@ -73,6 +73,7 @@ export const MedicalAcute: FC<Props> = memo(function MedicalAcute(props = {}) {
         />
         <MCQ
           className={classes.mCQ}
+          id={'precedureOpt'}
           hide={{
             radioYesRejected: true,
           }}
@@ -90,7 +91,6 @@ export const MedicalAcute: FC<Props> = memo(function MedicalAcute(props = {}) {
             ),
           }}
         />
-        <div></div>
       </div>
     </div>
   );
